@@ -8,16 +8,6 @@ export default function Login() {
   const nameRef = useRef();
   let navigate = useNavigate();
   const ref = collection(firestore, "andi-profile");
-
-  const querySnapShot = async () => {
-    const response = await getDocs(collection(firestore, "andi-profile"));
-    response.forEach((doc) => {
-      // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, " => ", doc.data());
-    });
-  };
-  // console.log(querySnapShot());
-
   const [data, setData] = useState({
     name: "",
     email: "",

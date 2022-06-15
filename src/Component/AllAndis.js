@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
-import { addDoc, collection, getDocs } from "@firebase/firestore";
+import { collection, getDocs } from "@firebase/firestore";
 import { firestore } from "./firebaseConfig";
 
 export default function AllAndis() {
