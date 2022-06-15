@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { firestore } from "./firebaseConfig";
-import { addDoc, collection, getDocs } from "@firebase/firestore";
+import { addDoc, collection } from "@firebase/firestore";
 import "../styles/form.css";
 
 export default function Login() {
