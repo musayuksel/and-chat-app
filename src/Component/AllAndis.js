@@ -5,16 +5,7 @@ import { firestore } from "./firebaseConfig";
 
 export default function AllAndis() {
   const [club, setClub] = useState("");
-  const [andisList, setAndisList] = useState([
-    {
-      id: "1",
-      name: "Musa",
-      email: "musa.yuksel@and.digital",
-      title: "Eagle Freak",
-      clubName: "jemison",
-      imgLink: "https://via.placeholder.com/150",
-    },
-  ]);
+  const [andisList, setAndisList] = useState([]);
   const querySnapShot = async () => {
     const response = await getDocs(collection(firestore, "andi-profile"));
     const andis = [];
