@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+nav ul li {
+    /* border: 1px solid red; */
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #222;
+    transition: all 0.4s ease;
+}
+nav ul li a:hover{
+    color: rgb(102, 27, 27);
+}
+nav ul li a.active{
+    color: rgb(255, 0, 0);
+}

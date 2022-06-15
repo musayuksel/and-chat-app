@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+.top-nav{
+  height: 36px;
+  background-color: #525252;
+}
+.logo{
+  margin: 2rem;
+}
+
+.gallery-page{
+  padding: 1rem 2rem;
+}
+.card-gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+.card-gallery-heading{
+  font-size: 4rem;
+  text-align: center;
+}
+.club-select-menu{
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+  width: 350px;
+}
+
+@media only screen and (min-width: 600px) {
+  .card-gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+@media only screen and (min-width: 900px) {
+  .card-gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card-gallery{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
